@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varnotsava</title>
+  <link rel="stylesheet" href="newstyles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo2.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" id="homeBtn"onclick="showHomePage()">Home</a></li>
+        <li><a href="#" id="eventBtn"onclick="showEvents()">Events</a></li>
+        <li><a href="#" id="registerBtn" onclick="toggleRegistrationLinks()">Register</a></li>
+        <li><a href="#" id="galleryBtn"onclick="loadGallery()">Gallery</a></li>
+        <li><a href="#" id="contactBtn"onclick="showContactDetails()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="panel">
+    <p><a href="https://sode-edu.in/" target="_blank">Want
+        to know more about SMVITM click here</a> <i class="fa-solid fa-chevron-right"></i></p>
+  </div>
+
+ 
+
+  <section class="hero">
+    <div class="hero-img"></div>
+    <p class="hero-para">|| SMVITM Presents Varnotsava ||</p>
+  </section>
+
+  <div id="home-content">
+    <p>As you embark upon the mystical realm of SMVITM College, the veils of mundane reality shall be lifted, and you shall witness the enchanting spirit of creativity and jubilation that is Varnotsava, our annual cultural gala.The very air shall be laden with the warmth and hospitality that defines our college, beckoning you into the embrace of our vibrant community. Varnotsava transcends the boundaries of mere festivity, serving as a tribute to the marvelous mosaic of talents and cultures that enriches our world. Our gates are open to you, dear seeker of wonder, to revel in the magic of Varnotsava, where the threads of tradition and fellowship intertwine, and every moment brims with revelry.</p>
+  </div>
+
+  <div id="events" class="hidden">
+    <input type="text" id="search" placeholder="Search events" oninput="filterEvents()">
+    <ol id="eventList">
+      <li>Electrocuted</li>
+      <li>Code Troopers Code Contest</li>
+      <li>Robo Soccer</li>
+      <li>BGMI</li>
+      <li>Tech Pursuit</li>
+      <li>Paper Presentaion</li>
+      <li>Line Follower</li>
+      <li>Robo Race</li>
+      <!-- Add more events as needed -->
+    </ol>
+  </div>
+
+  <div id="register" class="registration-links">
+    <!-- Different registration links -->
+    <ol>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdfOhWitlX7uc5U5c7-_flfQ1J5DkEbYAuhCpskn1V5_m1x5w/viewform?usp=pp_url" target="_blank"> <img src="Electrocuted.png" class="image" alt="QR Code">Electrocuted Event Registration</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfnjG_mmrOZZmH0vE0fbsbDSCAHIQo2KcVU0_WeD-22z8PPAA/viewform?usp=pp_url" target="_blank"> <img src="CodeTroopers Contest.png" class="image" alt="QR Code">CodeTroopers Event Registration</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe8CaK9uElgdBaGX_coHIhhdt_8Cr9jULDpKpaCifgKTAgpJQ/viewform?usp=pp_url" target="_blank"> <img src="ROBO SOCCER.png" class="image" alt="QR Code">Robo Soccer Event Registration</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScdyYXQTks7Pj5le98ooNxLiRm3RkL2DbUHgpEGSaC8FAcgsQ/viewform?usp=pp_url" target="_blank"> <img src="BGMI.png" class="image" alt="QR Code">BGMI Event Registration</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfO0FIMG-QmVcbVxEpombBPLVRqX1fAvcQa29W78ESyZ8gCgw/viewform?usp=pp_url" target="_blank"> <img src="TECH PURSUIT.png" class="image" alt="QR Code">Tech Pursuit Event Registration</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf8CBdszDybuohEi2ODLur9unnY_KoK7vHo4VGZckGGXNMKoQ/viewform?usp=pp_url" target="_blank"> <img src="Paper Presentation.png" class="image" alt="QR Code">Paper Presentation Event Registration</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfSW4yfyIme8xA6SsFjWqkSNTn5PMx_X_RKt74P37RBcxsPpQ/viewform?usp=pp_url" target="_blank"> <img src="LINE FOLLOWER.png" class="image" alt="QR Code">Line Follower Event Registration</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScU00DwVEdfFthJvqB5_OQKtu2RQflSlDhnoA7u9F4pVLDdSg/viewform?usp=pp_url" target="_blank"> <img src="Robo Race.png" class="image" alt="QR Code">Robo Race Event Registration</a></li>
+    </ol>
+  </div>
+
+  <div id="image-container"></div>
+
+<footer >
+  <div id="contact-details">
+    <h2>Contact Details</h2>
+    <p>Shri Madhwa Vadiraja Institute of Technology and Management,</p>
+    <p>Vishwothamma Nagar,Udupi</p>
+    <p>Udupi-574 115,Karnataka,India</p>
+    <p>Tel:+91 96116 15001</p>
+    <p>Email:info@sode-edu.in</p>
+  </div>
+</footer>
+
+
+
+  <!-- Your content goes here -->
+
+  <script src="newscript.js"></script>
+</body>
+
+</html>
